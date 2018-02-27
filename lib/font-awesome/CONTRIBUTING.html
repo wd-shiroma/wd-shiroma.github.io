@@ -1,0 +1,64 @@
+<h1 id="Contributing-to-Fork-Awesome"><a href="#Contributing-to-Fork-Awesome" class="headerlink" title="Contributing to Fork Awesome"></a>Contributing to Fork Awesome</h1><p>Looking to contribute something to Fork Awesome? <strong>Here’s how you can help.</strong></p>
+<h2 id="Requesting-new-icons"><a href="#Requesting-new-icons" class="headerlink" title="Requesting new icons"></a>Requesting new icons</h2><p>New icons mostly start as requests by the <a href="../../issues">Fork Awesome community on GitHub</a>. Want to request a new icon? Here are some things to keep in mind:</p>
+<ol>
+<li>Please be nice. Fork Awesome is a happy place.</li>
+<li>Please <a href="../../search?type=Issues">search</a> to see if your icon request already exists. If a request is found, please add a 👍 reaction to that one.</li>
+<li>Please make requests for single icons, unless you are requesting a couple of strictly related icons (e.g., thumbs-up/thumbs-down).</li>
+<li>Please and thank you if you include the following:<ul>
+<li>Title your <a href="../../issues/new?title=Icon%20Request:%20icon-">new issue</a> <code>Icon request: icon-name</code> (e.g., <code>Icon request: icon-car</code>).</li>
+<li>Include a few use cases for your requested icon. How do you plan on using it?</li>
+<li>Attach a single color image or two that represent the idea you’re going for.</li>
+<li>Request concrete objects: it’s harder to make an icon to represent happiness, it’s easier to make a smiley face. ☺</li>
+</ul>
+</li>
+</ol>
+<h2 id="Suggesting-icon-keyword-addition-removal"><a href="#Suggesting-icon-keyword-addition-removal" class="headerlink" title="Suggesting icon keyword addition/removal"></a>Suggesting icon keyword addition/removal</h2><p>Icon filters are maintained by the <a href="../../pulls?q=is%3Apr+label%3Adoc">Fork Awesome community on GitHub</a>.</p>
+<p>If you feel that an icon</p>
+<ul>
+<li>is missing keyword(s)</li>
+<li>contains invalid keyword(s)</li>
+</ul>
+<p>please send a <a href="https://help.github.com/articles/using-pull-requests/">PR</a> to the <code>master</code> branch.</p>
+<h2 id="Reporting-issues"><a href="#Reporting-issues" class="headerlink" title="Reporting issues"></a>Reporting issues</h2><p>We only accept issues that are icon requests, bug reports, or feature requests. Bugs must be isolated and reproducible problems that we can fix within the Fork Awesome core. Please read the following guidelines to ensure you are the paragon of bug reporting.</p>
+<ol>
+<li><strong>Search for existing issues.</strong> We get a lot of duplicate issues, and you’d help us out a lot by first checking if someone else has reported the same issue. Moreover, the issue may have already been resolved with a fix available.</li>
+<li><strong>Create an isolated and reproducible test case.</strong> Be sure the problem exists in Fork Awesome’s code with a <a href="http://css-tricks.com/reduced-test-cases/">reduced test case</a> that should be included in each bug report.</li>
+<li><strong>Include a live example.</strong> Make use of jsFiddle, jsBin, or Codepen to share your isolated test cases.</li>
+<li><strong>Share as much information as possible.</strong> Include operating system and version, browser and version, version of Fork Awesome, etc. where appropriate. Also include steps to reproduce the bug.</li>
+</ol>
+<h2 id="Key-branches"><a href="#Key-branches" class="headerlink" title="Key branches"></a>Key branches</h2><ul>
+<li><code>master</code> is the latest, deployed version</li>
+<li><code>gh-pages</code> is the hosted docs (not to be used for pull requests)</li>
+</ul>
+<h2 id="Notes-on-the-repo"><a href="#Notes-on-the-repo" class="headerlink" title="Notes on the repo"></a>Notes on the repo</h2><p>Fork Awesome’s CSS, LESS, SCSS, and documentation are all powered by Jekyll templates and built before each commit and release.</p>
+<ul>
+<li><code>_config.yml</code> - much of the site is driven off variables from this file, including Font Awesome and Bootstrap versions</li>
+<li><code>src/</code> - All edits to documentation, LESS, SCSS, and CSS should be made to files and templates in this directory</li>
+<li><code>src/icons.yml</code> - all LESS, SCSS, and CSS icon definitions are driven off this single file</li>
+</ul>
+<h2 id="Pull-requests"><a href="#Pull-requests" class="headerlink" title="Pull requests"></a>Pull requests</h2><ul>
+<li>Any changes to the docs must be made to the Liquid templates in the <code>src</code> directory</li>
+<li>Any changes to the styles must be made to the .less and .scss files in the <code>src</code> directory</li>
+<li>If modifying the .less and .scss files, always recompile and commit the compiled files</li>
+<li>Try not to pollute your pull request with unintended changes–keep them simple and small</li>
+<li>Try to share which browsers your code has been tested in before submitting a pull request</li>
+</ul>
+<h2 id="Coding-standards-HTML"><a href="#Coding-standards-HTML" class="headerlink" title="Coding standards: HTML"></a>Coding standards: HTML</h2><ul>
+<li>Two spaces for indentation, never tabs</li>
+<li>Double quotes only, never single quotes</li>
+<li>Always use proper indentation</li>
+<li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags)</li>
+</ul>
+<h2 id="Coding-standards-CSS"><a href="#Coding-standards-CSS" class="headerlink" title="Coding standards: CSS"></a>Coding standards: CSS</h2><ul>
+<li>Adhere to the <a href="http://markdotto.com/2011/11/29/css-property-order/">Recess CSS property order</a></li>
+<li>Multiple-line approach (one property and value per line)</li>
+<li>Always a space after a property’s colon (e.g., <code>display: block;</code> and not <code>display:block;</code>)</li>
+<li>End all lines with a semi-colon</li>
+<li>For multiple, comma-separated selectors, place each selector on its own line</li>
+<li>Attribute selectors, like <code>input[type=&quot;text&quot;]</code> should always wrap the attribute’s value in double quotes, for consistency and safety (see this <a href="http://mathiasbynens.be/notes/unquoted-attribute-values">blog post on unquoted attribute values</a> that can lead to XSS attacks)</li>
+</ul>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>By contributing your code, you agree to license your contribution under the terms of the MIT License:</p>
+<ul>
+<li><a href="http://opensource.org/licenses/mit-license.html">http://opensource.org/licenses/mit-license.html</a></li>
+</ul>
+<h2 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h2><p>Thanks to Bootstrap for their wonderful CONTRIBUTING.MD doc. It was modified to create this one.</p>

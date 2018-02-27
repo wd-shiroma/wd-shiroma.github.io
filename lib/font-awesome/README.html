@@ -1,0 +1,61 @@
+<h1 id="Fork-Awesome"><a href="#Fork-Awesome" class="headerlink" title="Fork Awesome"></a>Fork Awesome</h1><h3 id="A-fork-of-the-iconic-font-and-CSS-toolkit"><a href="#A-fork-of-the-iconic-font-and-CSS-toolkit" class="headerlink" title="A fork of the iconic font and CSS toolkit"></a>A fork of the iconic font and CSS toolkit</h3><p>Fork Awesome is a full suite of 698 pictographic icons for easy scalable vector graphics on websites, originally created by <a href="https://twitter.com/davegandy">Dave Gandy</a> and now maintained by a community.</p>
+<p>Following concerns regarding <a href="https://github.com/FortAwesome/Font-Awesome/issues/12199#issuecomment-362919956">the development of Font Awesome</a>, the PR Freeze since Oct 2016 and the direction Fort Awesome is taking with the version 5.0 of their project, we are forking Font Awesome (4.7), in order to build on this incredible tool Dave Gandy has given us, while at the same time allowing this project to be run by a distributed community of contributors.</p>
+<p>A tremendous gratitude is given to the whole team behind <a href="https://fontawesome.com">Font Awesome</a>, and you are encouraged to support them and buy Font Awesome Pro for your project.</p>
+<p>Though If you believe in distributed open source design and wish to be part of this new adventure, please start submitting patches and suggestions of improvement.</p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><ul>
+<li>The Fork Awesome font is licensed under the SIL OFL 1.1:<ul>
+<li><a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a></li>
+</ul>
+</li>
+<li>Fork Awesome CSS, LESS, and Sass files are licensed under the MIT License:<ul>
+<li><a href="https://opensource.org/licenses/mit-license.html">https://opensource.org/licenses/mit-license.html</a></li>
+</ul>
+</li>
+<li>The Fork Awesome documentation is licensed under the CC BY 3.0 License:<ul>
+<li><a href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><p>Please read through our <a href="https://github.com/ForkAwesome/Fork-Awesome/blob/master/CONTRIBUTING.md">contributing guidelines</a>.<br>Included are directions for opening issues, coding standards, and notes on development.</p>
+<h2 id="Versioning"><a href="#Versioning" class="headerlink" title="Versioning"></a>Versioning</h2><p>Fork Awesome will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered<br>with the following format:</p>
+<p><code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</code></p>
+<p>And constructed with the following guidelines:</p>
+<ul>
+<li>Breaking backward compatibility bumps the major (and resets the minor and patch)</li>
+<li>New additions, including new icons, without breaking backward compatibility bumps the minor (and resets the patch)</li>
+<li>Bug fixes, changes to brand logos, and misc changes bumps the patch</li>
+<li>The fork started from FontAwesome 4.7 (last commit by Dave is <a href="https://github.com/ForkAwesome/Fork-Awesome/commits/master?after=b0bc8f6fb74e05c987ef7ce1525cd3ab8390a1c3+69">bdfa9823</a>).</li>
+<li>The project starts at version 1.0.0. All references to versions before the fork are named 0.4.7</li>
+</ul>
+<p>For more information on SemVer, please visit <a href="http://semver.org">http://semver.org</a>.</p>
+<h2 id="Original-author-of-Font-Awesome"><a href="#Original-author-of-Font-Awesome" class="headerlink" title="Original author of Font Awesome:"></a>Original author of Font Awesome:</h2><ul>
+<li><a href="https://github.com/davegandy">Dave Gandy</a></li>
+</ul>
+<h2 id="Component"><a href="#Component" class="headerlink" title="Component"></a>Component</h2><p>To include as a <a href="https://github.com/componentjs/component">component</a>, just run</p>
+<pre><code>$ component install ForkAwesome/Fork-Awesome
+</code></pre><p>Or add</p>
+<pre><code>&quot;ForkAwesome/Fork-Awesome&quot;: &quot;*&quot;
+</code></pre><p>to the <code>dependencies</code> in your <code>component.json</code>.</p>
+<h2 id="Building-on-Fork-Awesome"><a href="#Building-on-Fork-Awesome" class="headerlink" title="Building on Fork Awesome"></a>Building on Fork Awesome</h2><p><strong>Before you can build the project</strong>, you must first have the following installed:</p>
+<ul>
+<li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+<li>Ruby Development Headers<ul>
+<li><strong>Ubuntu:</strong> <code>sudo apt-get install ruby-dev</code> <em>(Only if you’re <strong>NOT</strong> using <code>rbenv</code> or <code>rvm</code>)</em></li>
+<li><strong>Windows:</strong> <a href="http://rubyinstaller.org/">DevKit</a></li>
+</ul>
+</li>
+<li><a href="http://bundler.io/">Bundler</a> (Run <code>gem install bundler</code> to install).</li>
+<li><a href="https://docs.npmjs.com/getting-started/installing-node">Node Package Manager (aka. <code>npm</code>)</a></li>
+</ul>
+<p>From the root of the repository, install the tools used to develop.</p>
+<pre><code>$ bundle install
+$ npm install
+</code></pre><p>Build the font:</p>
+<pre><code>$:/src/icons make
+</code></pre><p>Build the web documentation:</p>
+<pre><code>$ npm run build
+</code></pre><p>Or serve it on a local server on <a href="http://localhost:7998/Fork-Awesome/">http://localhost:7998/Fork-Awesome/</a>:</p>
+<pre><code>$ npm run dev
+</code></pre><p>To deploy the project and documentation on GH pages:</p>
+<pre><code>$ jgd -n
+</code></pre>
